@@ -48,7 +48,7 @@ const deleteStudent = (id) => {
     // return false ; 
     
 
-    //by id 
+    //by findIndex Method
 
    let result = students.findIndex((student) => {
         return student.id === id; 
@@ -77,7 +77,7 @@ const searchById = (id) => {
 
     // return null; 
 
-    //by findMethod
+    //by find Method
 
    return students.find((student) => {
         return student.id === id ; 
@@ -95,7 +95,7 @@ const searchStudentByMajor = (major) => {
     // return result; 
 
 
-    //by method
+    //by filter Method
 
     return students.filter((student) => student.major === major)
 }
